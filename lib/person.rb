@@ -5,7 +5,7 @@ class Person
 
   def initialize(attributes) # Given a hash...
     attributes.each do |key, value| # Iterate over each key/value pair
-      self.send(("#{key}="), value)
+      self.send(("#{key}="), value) # And create a method for each
     end
   end
 
